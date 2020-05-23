@@ -39,10 +39,10 @@ namespace SmartACDeviceAPI.Test.Utils
         }
 
         [Fact, Trait("Category", "Generate")]
-        public void Generate_28_123_Measurements()
+        public void Generate_28_321_Measurements()
         {
-            var measurements = Generate("123", 28);
-            var file = @"../../../Data/Measurements.json";
+            var measurements = Generate("321", 28);
+            var file = @"../../../Data/321_Measurements.json";
             WriteDataFile.WriteData(file, measurements);
             Assert.True(WriteDataFile.FileExisits(file));
         }
