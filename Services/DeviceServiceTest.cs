@@ -12,7 +12,7 @@ using System.Linq;
 using System.Collections.Generic;
 using Amazon.DynamoDBv2.Model;
 
-namespace SmartACDeviceAPI.Tests
+namespace SmartACDeviceAPI.Test
 {
 
     public class DeviceServiceTest{
