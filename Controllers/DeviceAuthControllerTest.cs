@@ -1,5 +1,4 @@
 using System;
-using SmartACAPI;
 using Xunit;
 using Moq;
 using Microsoft.Extensions.Configuration;
@@ -15,7 +14,7 @@ using SmartACDeviceAPI.Options;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Mvc;
 
-namespace SmartACAPI.Test
+namespace SmartACDeviceAPI.Test
 {
     public class DeviceAuthControllerTest
     {
