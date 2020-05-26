@@ -37,11 +37,12 @@ namespace SmartACDeviceAPI.Test
         } 
 
         [Fact, Trait("Category", "Test")]
-        public void Test_Device_Not_Exists() {
+        public async void Test_Device_Not_Exists() {
             context.Setup(expression => expression.LoadAsync<Device>(badDevice.SerialNumber, It.IsAny<CancellationToken>()))
                    .Returns(() => Task.FromResult<Device>(null));
 
-            Assert.True(service.GetDeviceBySerialNumber(badDevice.SerialNumber) == null);
+            var device = await service.GetDeviceBySerialNumber(badDevice.SerialNumber);
+            Assert.True(device == null);
         }
 
         [Fact, Trait("Category", "Test")]

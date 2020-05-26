@@ -1,6 +1,5 @@
 using System.Threading;
 using System.Threading.Tasks;
-using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 using Moq;
 using SmartACDeviceAPI.Models;
@@ -33,5 +32,6 @@ namespace SmartACDeviceAPI.Test
             Assert.True(await service.IsInMaintananceMode());
         }
     }
+
 
 }
